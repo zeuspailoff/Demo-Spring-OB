@@ -16,10 +16,10 @@ public class DemoSpringObApplication {
 		ApplicationContext context = SpringApplication.run(DemoSpringObApplication.class, args);
 		LaptopRepository repository = context.getBean(LaptopRepository.class);
 
-		Laptop laptop1 =  new Laptop(
-				null, "HP", "Ryzen 7 ", 32, 850.50, LocalDate.of(2018,12,1),true);
-		Laptop laptop2 =  new Laptop(
-				null, "ASUS ", "INTEL 5 ", 16, 650.50, LocalDate.of(2019,10,5),true);
+		Laptop laptop1 = new Laptop(
+				null, "HP", "Ryzen 7 ", 32, 850.50, LocalDate.of(2018, 12, 1), true);
+		Laptop laptop2 = new Laptop(
+				null, "ASUS ", "INTEL 5 ", 16, 650.50, LocalDate.of(2019, 10, 5), true);
 
 		System.out.println("El numero de libros es: " + repository.findAll().size());
 
@@ -30,6 +30,7 @@ public class DemoSpringObApplication {
 
 		System.out.println("fin");
 
-	}
 
+
+	}
 }
