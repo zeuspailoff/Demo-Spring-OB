@@ -96,11 +96,11 @@ public class Laptop {
 
     @Override
     public String toString() {
-        return "Book{" +
+        return "Laptop{" +
                 "id=" + id +
-                ", title='" + marca + '\'' +
-                ", author='" + cpu + '\'' +
-                ", pages=" + ram +
+                ", Marca='" + marca + '\'' +
+                ", cpu ='" + cpu + '\'' +
+                ", ram=" + ram +
                 ", price=" + price +
                 ", releaseDate=" + releaseDate +
                 ", online=" + online +
